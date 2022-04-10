@@ -1,0 +1,256 @@
+/* @import url("https://use.fontawesome.com/releases/v5.7.2/css/all.css");  */
+@import url("https://use.fontawesome.com/releases/v6.1.1/css/all.css");
+
+html {
+  background-color: #e4e9fd;
+
+  background-image: -webkit-linear-gradient(65deg, #a683e3 50%, #e4e9fd 50%);
+
+  min-height: 1000px;
+
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+  padding-bottom: 0px;
+  font-size: 1.8em;
+}
+
+#date{
+  color: #fff;
+  border-top: 1px solid black;
+  margin-top: 0px;
+  padding-top: 2px;
+  padding-bottom: 5px;
+}
+
+.box {
+  max-width: 400px;
+
+  margin: 10px auto;
+
+  background: white;
+
+  border-radius: 5px;
+
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+
+#heading {
+  background-color: #a683e3;
+  text-align: center;
+}
+
+.item {
+  min-height: 70px;
+
+  display: flex;
+
+  align-items: center;
+
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+input:checked + p {
+  text-decoration: line-through;
+
+  text-decoration-color: #a683e3;
+}
+
+input[type='checkbox'] {
+  margin: 20px;
+}
+
+.option-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  transition: all 0.15s ease-out 0s;
+  background: #cbd1d8;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.5rem;
+  outline: none;
+  position: relative;
+  z-index: 1000
+}
+
+.option-input:hover {
+  background: #9faab7
+}
+
+.option-input:checked {
+  background: #a683e3
+}
+
+.option-input:checked::before {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  content: "\f111";
+  font-family: "Font Awesome 5 Free"; 
+  display: inline-block;
+  font-size: 16.7px;
+  text-align: center;
+  line-height: 30px
+}
+
+.option-input:checked::after {
+  -webkit-animation: click-wave 0.25s;
+  -moz-animation: click-wave 0.25s;
+  animation: click-wave 0.25s;
+  background: red;
+  content: '';
+  display: block;
+  position: relative;
+  z-index: 100
+}
+
+.option-input.radio {
+  border-radius: 50%
+}
+
+.option-input.radio::after {
+  border-radius: 50%
+}
+
+p {
+  margin: 0;
+
+  padding: 20px;
+
+  font-size: 20px;
+
+  font-weight: 200;
+
+  color: #00204a;
+}
+
+form {
+  text-align: center;
+
+  margin-left: 10px;
+
+  display: flex;
+
+  align-items: center;
+}
+
+button {
+  min-height: 50px;
+
+  width: 50px;
+
+  border-radius: 50%;
+
+  border-color: transparent;
+
+  background-color: #a683e3;
+
+  color: #fff;
+
+  font-size: 30px;
+
+  border-width: 0;
+
+  margin-left: 10px;
+}
+
+input[type='text'] {
+  text-align: center;
+
+  height: 60px;
+
+  top: 10px;
+
+  /* border: none; */
+  border-style: double;
+  border-width: 1px;
+  border-radius: 10px;
+  background: transparent;
+
+  font-size: 20px;
+
+  font-weight: 200;
+
+  width: 313px;
+}
+
+input[type='text']:focus {
+  outline: none;
+
+  box-shadow: inset 0 -3px 0 0 #a683e3;
+}
+
+::placeholder {
+  color: grey;
+
+  opacity: 1;
+}
+
+footer {
+  color: white;
+
+  color: rgba(0, 0, 0, 0.5);
+
+  text-align: center;
+}
+
+.aboutMid {
+  text-align: center;
+}
+
+.midButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  transition: 0.3s;
+}
+
+.midButtons:hover {
+  transform: scale(1.5); 
+}
+
+.fa-solid {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-arrows-rotate {
+  background: #a683e3;
+  color: white;
+}
+
+.switch {
+  text-align: center
+}

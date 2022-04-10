@@ -1,0 +1,25 @@
+<%- include('header'); -%>
+
+  <div class="box" id="heading">
+      <h1><%= title %></h1> 
+      <h3 id="date"><%= date %></h3>
+  </div>
+
+  <div class="switch"> 
+    Personal List<a href="<%= path %>" class="fa-solid fa-toggle-<%= toggle %> "></a>Work List
+  </div>
+
+    <div class="box">
+        <%  for(var i =0; i<newListItems.length; i++){ %>
+            <div class="item">
+              <input type="checkbox" class="option-input radio">
+              <p><%= newListItems[i] %></p>
+            </div>
+        <%  } %>
+        <form class="item" action="/" method="post">
+          <input type="text" id="todo" name="newItem" placeholder="Add New Item" autocomplete="off"/>
+          <button type="submit" name="list" value="<%= title %>">+</button>
+        </form>
+    </div>
+
+<%- include('footer'); -%>
